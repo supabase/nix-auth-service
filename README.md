@@ -1,18 +1,23 @@
-# nix-skel-service
+# nix-auth-service
 
-Skeleton Nix flake for packaging Go-based services. Clone this repo, run the
-interactive setup, and get a fully working Nix package with CI workflows.
+Nix flake that packages [Supabase Auth](https://github.com/supabase/auth) (gotrue) and provides a system-manager service module for deployment in supabase/postgres.
+
+## What's Here
+
+- **`nix/packages/`** — `buildGoModule` package for the `auth` binary, driven by `.package-config.json`
+- **`service.nix`** — NixOS/system-manager module defining the `gotrue` and `gotrue-optimize` systemd services, system user, tmpfiles, and sysctl tuning; mapped from the ansible tasks in pg-oriole-latest
+- **CI** — GitHub Actions: nix-eval + nix-build across x86_64-linux, aarch64-linux, aarch64-darwin
+- **Pre-commit hooks** — actionlint + treefmt (nixfmt, deadnix)
+- **Pinned nixpkgs** — follows `supabase/postgres` nixpkgs
+
+## Current Package
+
+| Field        | Value                         |
+|--------------|-------------------------------|
+| Package name | `auth`                        |
+| Upstream     | `github.com/supabase/auth`    |
+| Version      | `v2.187.0`                    |
 
 ## Quick Start
 
-See [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md) for step-by-step
-instructions.
-
-## What You Get
-
-- Nix package using `buildGoModule` with `fetchFromGitHub`
-- Development shell with formatting and linting tools
-- GitHub Actions CI: nix-eval + nix-build across x86_64-linux, aarch64-linux,
-  aarch64-darwin
-- Pre-commit hooks: actionlint + treefmt (nixfmt, deadnix, ruff)
-- Pinned to the same nixpkgs as supabase/postgres
+See [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md) for how to build, update to a new release, and wire `service.nix` into deployment.
