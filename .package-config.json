@@ -1,9 +1,9 @@
 {
-  "name": "my-go-service",
-  "description": "My Go service",
-  "owner": "your-org",
-  "repo": "your-repo",
-  "ref": "v0.0.0",
-  "sha256": "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
-  "vendorHash": "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  "name": "auth",
+  "description": "Supabase Auth Server",
+  "owner": "supabase",
+  "repo": "auth",
+  "ref": "v2.187.0",
+  "sha256": "sha256-Hb0mz7JaHRpbTQNPuVG2xPubctPJYRw0vWr9s1rNRJM=",
+  "vendorHash": "sha256-3zvudV60v/BHHz3dfjOdII+XKcxy/1b4uDN+R+xcUxY="
 }
