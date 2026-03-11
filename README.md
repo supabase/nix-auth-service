@@ -5,7 +5,7 @@ Nix flake that packages [Supabase Auth](https://github.com/supabase/auth) (gotru
 ## What's Here
 
 - **`nix/packages/`** — `buildGoModule` package for the `auth` binary, driven by `.package-config.json`
-- **`service.nix`** — NixOS/system-manager module defining the `gotrue` and `gotrue-optimize` systemd services, system user, tmpfiles, and sysctl tuning; mapped from the ansible tasks in pg-oriole-latest
+- **`service.nix`** — NixOS/system-manager module defining the `gotrue` and `gotrue-optimize` systemd services, system user, tmpfiles, and sysctl tuning; mapped from the ansible tasks in supabase/postgres
 - **CI** — GitHub Actions: nix-eval + nix-build across x86_64-linux, aarch64-linux, aarch64-darwin
 - **Pre-commit hooks** — actionlint + treefmt (nixfmt, deadnix)
 - **Pinned nixpkgs** — follows `supabase/postgres` nixpkgs

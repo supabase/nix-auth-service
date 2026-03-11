@@ -2,5 +2,3 @@ result
 __pycache__/
 *.pyc
 .pre-commit-config.yaml
-service.nix
-.service-config.json
