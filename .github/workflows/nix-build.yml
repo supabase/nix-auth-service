@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
-        uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
+        uses: useblacksmith/stickydisk@53fa0c2f644d5d6ce16c601f25e3e9f8f267ee38  # v1
         with:
           key: ${{ github.repository }}-nix-cache-${{ runner.os }}-${{ runner.arch }}
           path: /nix
@@ -65,7 +65,7 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
-        uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
+        uses: useblacksmith/stickydisk@53fa0c2f644d5d6ce16c601f25e3e9f8f267ee38  # v1
         with:
           key: ${{ github.repository }}-nix-cache-${{ runner.os }}-${{ runner.arch }}
           path: /nix
@@ -93,7 +93,7 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Install nix
         if: ${{ matrix.attr != '' }}
-        uses: cachix/install-nix-action@v30
+        uses: cachix/install-nix-action@v31
       - name: nix build
         if: ${{ matrix.attr != '' }}
         shell: bash
@@ -115,7 +115,7 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Install nix
         if: ${{ matrix.attr != '' }}
-        uses: cachix/install-nix-action@v30
+        uses: cachix/install-nix-action@v31
       - name: nix build
         if: ${{ matrix.attr != '' }}
         shell: bash
@@ -137,7 +137,7 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
-        uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
+        uses: useblacksmith/stickydisk@53fa0c2f644d5d6ce16c601f25e3e9f8f267ee38  # v1
         with:
           key: ${{ github.repository }}-nix-cache-${{ runner.os }}-${{ runner.arch }}
           path: /nix
@@ -165,7 +165,7 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
-        uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
+        uses: useblacksmith/stickydisk@53fa0c2f644d5d6ce16c601f25e3e9f8f267ee38  # v1
         with:
           key: ${{ github.repository }}-nix-cache-${{ runner.os }}-${{ runner.arch }}
           path: /nix
