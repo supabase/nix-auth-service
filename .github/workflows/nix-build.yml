@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Checkout Repo
         if: ${{ matrix.attr != '' }}
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
         uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
@@ -62,7 +62,7 @@ jobs:
     steps:
       - name: Checkout Repo
         if: ${{ matrix.attr != '' }}
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
         uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
@@ -90,7 +90,7 @@ jobs:
     steps:
       - name: Checkout Repo
         if: ${{ matrix.attr != '' }}
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
       - name: Install nix
         if: ${{ matrix.attr != '' }}
         uses: cachix/install-nix-action@v30
@@ -112,7 +112,7 @@ jobs:
     steps:
       - name: Checkout Repo
         if: ${{ matrix.attr != '' }}
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
       - name: Install nix
         if: ${{ matrix.attr != '' }}
         uses: cachix/install-nix-action@v30
@@ -134,7 +134,7 @@ jobs:
     steps:
       - name: Checkout Repo
         if: ${{ matrix.attr != '' }}
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
         uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
@@ -162,7 +162,7 @@ jobs:
     steps:
       - name: Checkout Repo
         if: ${{ matrix.attr != '' }}
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
       - name: Mount Nix cache disk
         if: ${{ matrix.attr != '' }}
         uses: useblacksmith/stickydisk@a652394bf1bf95399f406e648482b41fbd25c51f # v1
